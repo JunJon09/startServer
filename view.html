@@ -1,0 +1,11 @@
+<h1>読んだ書籍</h1>
+
+<form action="/view/create" method="post">
+    <div><input type="text" name="value"></div>
+    <div><input type="submit" value="追加"></div>
+</form>
+<div>
+    {{ range .Books }}
+    <p>{{.}}</p>
+    {{ end }}
+</div>
